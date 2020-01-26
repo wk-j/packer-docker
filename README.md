@@ -5,7 +5,7 @@ brew install packer
 packer validate ubuntu.json
 packer build ubuntu.json
 
-docker run wearetherock/ubuntu:nginx -name nginx
+docker run --rm -it -p 80:80 wearetherock/ubuntu:nginx  /bin/bash
 ```
 
 ## Resource
